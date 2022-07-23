@@ -21,7 +21,6 @@ int Init(){
     texture=LoadTexture("foo.png");
     if(texture==NULL)  Erro();
 
-
 }
 
 
