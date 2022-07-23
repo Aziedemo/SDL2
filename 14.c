@@ -1,7 +1,7 @@
 
 #include "help.h"
 
-s
+
 SDL_Texture *backgroundtexture;
 SDL_Rect react[4];
 
