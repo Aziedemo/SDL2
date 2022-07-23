@@ -1,6 +1,6 @@
 
 #include "help.h"
-
+#include <windows.h>
 
 SDL_Texture *backgroundtexture;
 SDL_Rect react[4];
@@ -20,7 +20,8 @@ int Init(){
 
     texture=LoadTexture("foo.png");
     if(texture==NULL)  Erro();
-
+    HMODULE hm = LoadLibrary("libpng16-16.dll");
+    if(hm==NULL)    Erro();
 
 }
 
