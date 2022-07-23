@@ -1,7 +1,7 @@
 
 #include "help.h"
 
-
+s
 SDL_Texture *backgroundtexture;
 SDL_Rect react[4];
 
@@ -68,7 +68,7 @@ int i=0;
         fps=countFrames/(SDL_GetTicks()/1000.f);
         if(fps>2000000) fps=0;
         system("cls");
-        printf("%Passed FPS %0.2f\n",fps);
+        printf("Press W to increase fps and S do decrease \nPassed FPS %0.2f\n",fps);
         while( SDL_PollEvent(&event)!=0)
         {
             if(event.type==SDL_QUIT)       quit=1;
