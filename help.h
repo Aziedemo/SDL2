@@ -11,8 +11,12 @@ SDL_Rect ds;
 SDL_Rect st;
 
 void Erro(){
-    printf("Sorry bro:\t\n%s",SDL_GetError());
+
+    FILE *m=fopen("error.txt","a");
+    fprintf(m,"Sorry bro:\t\n%s",SDL_GetError());
+    fclose(m);
     exit(1);
+
 }
 
 SDL_Texture * LoadTexture(FILE *m){
